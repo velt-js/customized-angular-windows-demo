@@ -1,0 +1,64 @@
+<velt-wireframe style="display:none;">
+	<velt-comment-dialog-wireframe>
+		<velt-comment-dialog-header-wireframe><velt-comment-dialog-delete-button-wireframe></velt-comment-dialog-delete-button-wireframe>
+		</velt-comment-dialog-header-wireframe>
+		<!-- Body -->
+		<velt-comment-dialog-body-wireframe></velt-comment-dialog-body-wireframe>
+		<!-- Composer -->
+		<velt-comment-dialog-composer-wireframe></velt-comment-dialog-composer-wireframe>
+		<!-- All Comments -->
+		<velt-comment-dialog-all-comment-wireframe></velt-comment-dialog-all-comment-wireframe>
+		<!-- Approve -->
+		<velt-comment-dialog-approve-wireframe></velt-comment-dialog-approve-wireframe>
+		<!-- Sign In -->
+		<velt-comment-dialog-sign-in-wireframe></velt-comment-dialog-sign-in-wireframe>
+		<!-- Upgrade -->
+		<velt-comment-dialog-upgrade-wireframe></velt-comment-dialog-upgrade-wireframe>
+		<!-- Suggestion Action -->
+		<velt-comment-dialog-suggestion-action-wireframe></velt-comment-dialog-suggestion-action-wireframe>
+	</velt-comment-dialog-wireframe>
+
+	<velt-comment-dialog-thread-card-wireframe>
+		<velt-comment-dialog-thread-card-avatar-wireframe></velt-comment-dialog-thread-card-avatar-wireframe>
+		<div class="content">
+			<span>
+				<velt-data path="commentAnnotation.from.name" class="author"></velt-data>:
+				<velt-data path="commentAnnotation.comments[0].commentText" class="comment"></velt-data>
+			</span>
+			<velt-comment-dialog-thread-card-attachments-wireframe>
+			</velt-comment-dialog-thread-card-attachments-wireframe>
+		</div>
+	</velt-comment-dialog-thread-card-wireframe>
+	
+	<velt-comment-dialog-composer-wireframe>
+		<p style="margin: 1rem 0 1.25rem 0">Enter New Reply...</p>
+		<div class="composer-container">
+			<velt-comment-dialog-composer-avatar-wireframe></velt-comment-dialog-composer-avatar-wireframe>
+			<!-- Used for inline comments-->
+			<span>
+				<velt-comment-dialog-composer-input-wireframe
+				placeholder="Enter your reply..."></velt-comment-dialog-composer-input-wireframe>
+				<velt-comment-dialog-composer-attachments-wireframe>
+				</velt-comment-dialog-composer-attachments-wireframe>
+			</span>
+
+		</div>
+
+		<div class="actions">
+			<div class="attachments">
+				<velt-comment-dialog-composer-action-button-wireframe type="attachments">
+					<img src="./assets/icons/icon_audio.svg" alt="File">
+					<p>Add Audio</p>
+				</velt-comment-dialog-composer-action-button-wireframe>
+				<velt-comment-dialog-composer-action-button-wireframe type="attachments">
+					<img src="./assets/icons/icon_file.svg" alt="File">
+					<p>Add File</p>
+				</velt-comment-dialog-composer-action-button-wireframe>
+			</div>
+			<velt-comment-dialog-composer-action-button-wireframe type="submit">
+				<p>SEND</p>
+			</velt-comment-dialog-composer-action-button-wireframe>
+		</div>
+	</velt-comment-dialog-composer-wireframe>
+
+</velt-wireframe>

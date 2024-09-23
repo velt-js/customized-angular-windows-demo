@@ -1,1 +1,211 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 0px !important;
+	font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS&family=Tahoma&display=swap');
+
+body {
+	font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.velt-inline-comments-section {
+	width: 100% !important;
+	background-color: transparent !important;
+
+
+	.content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+
+		padding: 0.75rem;
+
+		background-color: white !important;
+		box-shadow: 2.5px 2.5px 0px #B3B1AC inset !important;
+
+		font-size: 1rem;
+		line-height: 150%;
+
+		.author {
+			font-family: 'Palatino', serif;
+			color: #0F0BB8 !important;
+			font-weight: bold;
+		}
+
+		app-comment-dialog-thread-card-attachments {
+			max-width: 80px;
+			margin-top: 0.5rem;
+
+			.comment-attachments,
+			.velt-comment-attachmentsd {
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+
+.velt-inline-comments-section--info {
+	display: none !important;
+}
+
+.velt-inline-comments-section--comments {
+	margin-top: 0 !important;
+	flex-direction: column-reverse !important;
+}
+
+app-inline-comments-section-panel {
+	&>.ng-star-inserted {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+		gap: 1.25rem !important;
+	}
+}
+
+.velt-comment-dialog {
+	background-color: #f4f4e1 !important;
+	width: 100% !important;
+	padding: 0 !important;
+	border: 1px solid transparent !important;
+	box-shadow: none !important;
+}
+
+.velt-composer--reply-div,
+.velt-composer--input-text-wrap {
+	background-color: #ffffff !important;
+	box-shadow: 2.5px 2.5px 0px #B3B1AC inset !important;
+	;
+}
+
+app-comment-dialog-toggle-reply {
+	display: none !important;
+}
+
+app-comment-dialog-thread-card-avatar {}
+
+.modal-author,
+.velt-thread-card--author {
+	gap: 1.5rem !important;
+}
+
+.velt-composer--inline-comment-section-mode {
+	gap: 1.5rem !important;
+}
+
+.velt-thread-card--message,
+.velt-thread-card--inline-mode {
+	padding-left: 0 !important;
+	margin-top: 0 !important;
+}
+
+
+velt-comment-dialog-composer-action-button-wireframe {
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 0.5rem !important;
+	justify-content: center !important;
+	align-items: center !important;
+	min-height: 50px !important;
+	min-width: 100px !important;
+
+	//background-image: url('assets/button_bg.svg') !important;
+	//background-size: cover !important;
+	//background-repeat: no-repeat !important;
+	background-color: #f4f4e1 !important;
+	box-shadow: -2px -2px 0px 2px #747570 inset, 2px 2px 0px 2px #CDCDC5 inset !important;
+
+	&:active {
+		box-shadow: 2px 2px 0px 2px #747570 inset, -2px -2px 0px 2px #CDCDC5 inset !important;
+	}
+
+	padding: 0.75rem 1.25rem !important;
+	padding-left: 0.75rem !important;
+	overflow: hidden !important;
+
+	p {
+		color: #000000 !important;
+		width: max-content !important;
+		font-family: Tahoma !important;
+	}
+}
+
+.velt-composer--submit-button {
+	velt-comment-dialog-composer-action-button-wireframe {
+		padding: 0.75rem 1.25rem !important;
+		font-size: 1rem !important;
+	}
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	width: 100% !important;
+	margin-top: 1.25rem !important;
+
+	.attachments {
+		display: flex;
+		gap: 0.5rem;
+		padding-left: 4px;
+	}
+}
+
+app-action-button {
+	justify-content: flex-start !important;
+
+	button {
+		height: 50px !important;
+		width: 130px !important;
+	}
+}
+
+app-comment-dialog-composer-input {
+	font-size: 1rem;
+	line-height: 150%;
+}
+
+.composer-container {
+	display: flex;
+	gap: 1.25rem;
+
+	&>span {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		background-color: white !important;
+		box-shadow: 2.5px 2.5px 0px #B3B1AC inset !important;
+		padding: 0.5rem !important;
+		font-size: 1rem;
+		line-height: 150%;
+	}
+}
+
+.velt-user-avatar {
+	width: 52px !important;
+	height: 52px !important;
+}
+
+
+velt-comment-dialog-thread-card-wireframe {
+	display: flex;
+	flex-direction: row;
+	gap: 1.25rem;
+}
+
+button[disabled] {
+	opacity: 0.5;
+}
