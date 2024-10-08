@@ -9,8 +9,8 @@
 			<p style="color: white;">Chat App</p>
 		</div>
 
-		<div class="app-window" *ngIf="showWindow" (mousedown)="onMouseDown($event)" style="position: absolute;">
-			<div class="header">
+		<div class="app-window" *ngIf="showWindow"  style="position: absolute;">
+			<div class="app-header" (mousedown)="onMouseDown($event)">
 
 				<p>Chat</p>
 

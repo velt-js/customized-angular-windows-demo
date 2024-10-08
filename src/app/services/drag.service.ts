@@ -12,21 +12,21 @@ export class DragService {
 
 	constructor() { }
 
-	onMouseDown(event: MouseEvent, appWindow: HTMLElement) {
+	onMouseDown(event: MouseEvent, appHeader: HTMLElement) {
 		this.isDragging = true;
 		this.dragStartX = event.clientX;
 		this.dragStartY = event.clientY;
-		this.windowStartX = appWindow.offsetLeft;
-		this.windowStartY = appWindow.offsetTop;
+		this.windowStartX = appHeader?.parentElement?.offsetLeft ?? 0;
+		this.windowStartY = appHeader?.parentElement?.offsetTop ?? 0;
 		event.preventDefault();
 	}
 
-	onMouseMove(event: MouseEvent, appWindow: HTMLElement) {
+	onMouseMove(event: MouseEvent, appHeader: HTMLElement) {
 		if (this.isDragging) {
 			const deltaX = event.clientX - this.dragStartX;
 			const deltaY = event.clientY - this.dragStartY;
-			appWindow.style.left = `${this.windowStartX + deltaX}px`;
-			appWindow.style.top = `${this.windowStartY + deltaY}px`;
+			appHeader.parentElement!.style.left = `${this.windowStartX + deltaX}px`;
+			appHeader.parentElement!.style.top = `${this.windowStartY + deltaY}px`;
 		}
 	}
 

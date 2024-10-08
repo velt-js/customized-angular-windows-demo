@@ -58,13 +58,13 @@ export class AppComponent {
 	}
 
 	onMouseDown(event: MouseEvent) {
-		const appWindow = document.querySelector('.app-window') as HTMLElement;
-		this.dragService.onMouseDown(event, appWindow);
+		const appHeader = document.querySelector('.app-header') as HTMLElement;
+		this.dragService.onMouseDown(event, appHeader);
 	}
 
 	onMouseMove(event: MouseEvent) {
-		const appWindow = document.querySelector('.app-window') as HTMLElement;
-		this.dragService.onMouseMove(event, appWindow);
+		const appHeader = document.querySelector('.app-header') as HTMLElement;
+		this.dragService.onMouseMove(event, appHeader);
 	}
 
 	onMouseUp() {
