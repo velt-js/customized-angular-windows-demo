@@ -1,7 +1,5 @@
 <velt-wireframe style="display:none;">
 	<velt-comment-dialog-wireframe>
-		<velt-comment-dialog-header-wireframe><velt-comment-dialog-delete-button-wireframe></velt-comment-dialog-delete-button-wireframe>
-		</velt-comment-dialog-header-wireframe>
 		<!-- Body -->
 		<velt-comment-dialog-body-wireframe></velt-comment-dialog-body-wireframe>
 		<!-- Composer -->
@@ -22,14 +20,14 @@
 		<velt-comment-dialog-thread-card-avatar-wireframe></velt-comment-dialog-thread-card-avatar-wireframe>
 		<div class="content">
 			<span>
-				<velt-data path="commentAnnotation.from.name" class="author"></velt-data>:
-				<velt-data path="commentAnnotation.comments[0].commentText" class="comment"></velt-data>
+				<velt-data field="commentAnnotation.from.name" class="author"></velt-data>:
+				<velt-data field="commentAnnotation.comments[0].commentText" class="comment"></velt-data>
 			</span>
 			<velt-comment-dialog-thread-card-attachments-wireframe>
 			</velt-comment-dialog-thread-card-attachments-wireframe>
 		</div>
 	</velt-comment-dialog-thread-card-wireframe>
-	
+
 	<velt-comment-dialog-composer-wireframe>
 		<p style="margin: 1rem 0 1.25rem 0">Enter New Reply...</p>
 		<div class="composer-container">
@@ -37,7 +35,7 @@
 			<!-- Used for inline comments-->
 			<span>
 				<velt-comment-dialog-composer-input-wireframe
-				placeholder="Enter your reply..."></velt-comment-dialog-composer-input-wireframe>
+					placeholder="Enter your reply..."></velt-comment-dialog-composer-input-wireframe>
 				<velt-comment-dialog-composer-attachments-wireframe>
 				</velt-comment-dialog-composer-attachments-wireframe>
 			</span>

@@ -1,5 +1,5 @@
 <main (click)="playClickSound()" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp()">
-	<velt-comments text-mode="false" ></velt-comments>
+	<velt-comments text-mode="false"></velt-comments>
 	<app-wireframe></app-wireframe>
 	<div class="content">
 
@@ -22,8 +22,9 @@
 			<div class="message">
 
 				<section id="container-id" data-velt-target-inline-comment-element-id="container-id">
-					<velt-inline-comments-section target-comment-element-id="container-id" shadow-dom="false"
-						dialog-variant="dialog-variant" variant="inline-section-variant" dark-mode="true">
+					<velt-inline-comments-section multi-thread="false" target-comment-element-id="container-id"
+						shadow-dom="false" dialog-variant="dialog-variant" variant="inline-section-variant"
+						dark-mode="true">
 					</velt-inline-comments-section>
 				</section>
 			</div>
