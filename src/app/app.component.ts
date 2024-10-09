@@ -70,4 +70,8 @@ export class AppComponent {
 	onMouseUp() {
 		this.dragService.onMouseUp();
 	}
+
+	openFigma() {
+		window.open('https://customized-angular-figma-demo.vercel.app/', '_blank');
+	}
 }

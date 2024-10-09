@@ -35,7 +35,7 @@
 	<div class="toolbar">
 		<div class="LHS">
 			<img src="assets/start_button.svg" alt="Start" />
-			<img src="assets/figma_inactive.svg" alt="Figma" />
+			<img src="assets/figma_inactive.svg" (click)="openFigma()" style="cursor: pointer;" alt="Figma" />
 			<img src="assets/chat_active.svg" alt="Chat - Active" (click)="showWindow = false; playClickSound()"
 				*ngIf="showWindow" />
 			<img src="assets/chat_inactive.svg" alt="Chat - Inactive" (click)="showWindow = true; playClickSound()"
